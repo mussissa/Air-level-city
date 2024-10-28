@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+.bottom-zoom{
+    display: flex;
+    border: 2px solid blue;
+    width: 400px;
+
+}  
+
+
+:root {
+    --color-otimo: rgb(162, 216, 162);
+    --color-bom: rgb(60, 143, 71);
+    --color-moderado: rgb(163, 116, 85);
+    --color-poluido: rgb(214, 13, 13);
+    --color-superpoluido: rgb(82, 2, 2);
+  }
