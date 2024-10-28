@@ -47,7 +47,7 @@ export class TempoService {
  
   getCity(lat: number, long: number): Observable<any> {
     return this.http.get<any>(
-      `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${apiKey}`
+      `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${apiKey}`
     ).pipe(
       catchError(error => {
         console.error('Erro ao buscar cidade:', error);
@@ -57,7 +57,7 @@ export class TempoService {
 
   getClima(lat: number, long: number): Observable<apiResponse> {
     return this.http.get<apiResponse>(
-      `http://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${long}&appid=${apiKey}`
+      `https://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${long}&appid=${apiKey}`
     ).pipe(
       catchError(error => {
         console.error('Erro ao buscar clima:', error);
