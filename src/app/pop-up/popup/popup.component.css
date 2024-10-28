@@ -76,3 +76,22 @@
     list-style: none;
   }
 
+
+
+  @media screen and (max-width: 600px) {
+    .popup {
+      width: 90%; 
+      height: auto; 
+      padding: 5px; 
+      min-width: 150px; 
+    }
+  
+    .popup > h1 {
+      font-size: 1.2rem; 
+    }
+  
+    .popup p {
+      font-size: 1rem; 
+    }
+
+  }

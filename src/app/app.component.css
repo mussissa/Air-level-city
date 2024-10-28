@@ -1,6 +1,7 @@
 .map {
   width: 100%;
   height: 400px;
+  min-height: 300px;
 }
 
 .legend {
@@ -30,12 +31,21 @@
 
 
 
-@media screen and (max-width:1024px ){
-    .legend{
-      left: 50%;
-    }
+@media screen and (max-width: 1024px) {
+  .legend {
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 180px;
+  }
 }
 
+
+@media screen and (max-width: 600px) {
+  .legend {
+    font-size: 0.9rem;
+    min-width: 180px;
+  }
+}
 
 
 
